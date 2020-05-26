@@ -36,6 +36,5 @@ bot.on( 'message', ( msg ) => {
 } );
 
 export default ( req: NowRequest, res: NowResponse ) => {
-  console.log( "TOKEN:", token )
-  res.json({ name: 'John', email: 'john@example.com' })
+  res.json({ name: 'John', email: 'john@example.com', token: token })
 }
